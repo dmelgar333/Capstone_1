@@ -21,8 +21,7 @@ WHERE sl.state = 'Maine';
 -- Question 2: What is the month by month revenue breakdown for the sales territory?
 
 SELECT
- MONTH(Transaction_Date) AS Month_Num,
- MONTHNAME(Transaction_Date) AS Month_Name,
+ MONTHNAME(Transaction_Date) AS Revenue_Month,
  YEAR(Transaction_Date) AS Year,
  ROUND(SUM(Sale_Amount), 2) AS Monthly_Revenue
 FROM store_sales ss
@@ -63,20 +62,24 @@ WHERE sl.State = 'Maine'
 GROUP BY YEAR(Transaction_Date), MONTH(Transaction_Date), ic.Category
 ORDER BY YEAR(Transaction_Date), MONTH(Transaction_Date);
 
--- Results: Overall, Technology & Accessories have the highest revenue steadily, compared to the other categories. I would say if you want the revenue to grow focus on the Tech & Accessories Category.
+-- Results: Overall, Technology & Accessories have the highest revenue steadily, compared to the other categories. I would say if you want the revenue to grow focus on the Tech & Accessories Category. I first started by finding the foundations like category, transactions, month and link sales to provide a table with all the category. 
 
 -- Question 5: Store performance ranking by each store in the sales territory 
-
-SELECT
-    sl.StoreLocation            AS Store,
-    COUNT(*)                    AS Num_Transactions,
-    ROUND(SUM(ss.Sale_Amount), 2)   AS Total_Revenue,
-    ROUND(AVG(ss.Sale_Amount), 2)   AS Avg_Transaction_Size,
-    RANK() OVER (ORDER BY SUM(ss.Sale_Amount) DESC) AS Revenue_Rank
-FROM Store_Sales ss
-JOIN Store_Locations sl ON ss.Store_ID = sl.StoreId
-WHERE sl.State = 'Maine'
+SELECT 
+  sl.StoreLocation  AS store,
+  COUNT(*)  AS num_transactions,
+  ROUND(SUM(ss.sale_amount), 2) AS total_revenue,
+  ROUND(AVG(ss.sale_amount), 2) AS avg_transaction_size,
+  RANK() OVER (ORDER BY SUM(ss.sale_amount) DESC) AS revenue_rank
+FROM store_sales ss
+JOIN store_locations sl ON ss.store_ID = sl.storeId
+WHERE sl.state = 'Maine'
 GROUP BY sl.StoreLocation
-ORDER BY Revenue_Rank;
+ORDER BY revenue_rank;
 
--- Results: Bar Harbor is ranked last, the focus should be there to raise the revenue and Bangor as well which isn't too far ahead. 
+-- Results: Bar Harbor is ranked last, the focus should be there to raise the revenue and Bangor as well which isn't too far ahead.
+
+-- 6. Recommendation for the next quarter?
+-- From my analysis on this project, I would say my recommendation for the next quarter would be to center the focus on Technology & Accessories category. 
+-- It has the highest revenue and has the most sales in all stores across the board. There should be an effort to bring up the revenue in Bar Harbor Store
+-- Bar Harbor has the lowest revenue and ranked last, once this goes up the overall Maine territory revenue will rise greatly in the next quarter. 
