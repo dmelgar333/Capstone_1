@@ -9,3 +9,15 @@ Territory: Maine
 Region: Northeast
 Regional Manager: Michael Jarvis
 Sales Manager: Erbayne Middleton
+**Stores:** Bangor, Bar Harbor, Kennebunkport, Lewiston, Orono, South Portland
+
+## Analysis Questions
+1. Total revenue and date range for Maine territory
+2. Month by month revenue breakdown
+3. Maine revenue compared to the full Northeast region
+4. Transactions per month and average transaction size by product category
+5. Ranking of store performance across Maine locations
+6. Recommendation for next quarter focus
+
+   ## Recommendation:
+   For the next quarter the focus should be on the Bar Harbor store location and Technology & Accessories category. Bar Harbor has the lowest transactions, focusing on rising the sales in Bar Harbor will bring Maines'territory revenue sales up greatly. 
