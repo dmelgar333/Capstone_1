@@ -20,6 +20,6 @@ The project I have been presented with is to analyze sales data from the EmporiU
 6. Recommendation for next quarter focus
 
    ## Recommendation:
-   For the next quarter the focus should be on the Bar Harbor store location and Technology & Accessories category. Bar Harbor has the lowest transactions, focusing on rising the sales in Bar Harbor will bring Maines'territory revenue sales up greatly. 
+   For the next quarter the focus should be on the Bar Harbor store location and Technology & Accessories category. Bar Harbor has the lowest transactions, focusing on rising the sales in Bar Harbor and pushing Technology & Accessories throughout all stores, will bring Maines'territory revenue sales up greatly. 
 
-## Video Link :
+## Video Link : https://yearuptemp-my.sharepoint.com/:f:/g/personal/dmelgar_my_yearupunited_org/IgCAlC2LCB6EQYrOsm7qE0BdAZjqM795WRMDRBwl30Xg0xY?tdid=2e966123-4d69-4f62-a2a6-300294e5c483
