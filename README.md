@@ -2,7 +2,7 @@
 # Demy Melgar - Year Up United Data Analytics 2026
 
 ## Project Overview
-The project I have been presented with is to analyze sales data from the EmporiUm company, the goal is to answer key questions the business has requested and to create a Pivot table. 
+The project I have been presented with is to perform a sales territory analysis for EmporiUm, a student bookstore chain. I was assigned the state of Maine as my sales territory. The objective was to answer the analysis questions and make a data driven recommendation for where to focus sales attention next quarter.
 
 ## My Sales Territory
 **Territory**: Maine
